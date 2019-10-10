@@ -1,0 +1,43 @@
+mixin gorizontal-block-content
+	.template-wrapper.full-height.section-wrapper.template-wrapper_gorizontal-block
+		h2.main-h2 Что предлагаем
+		ul.gorizontal-wrapper.offer-list
+			li.offer-list__item
+				.offer-list__item-icon
+				.offer-content
+					.offer-content__title Задачи любой сложности
+					.offer-content__text
+						| Подберём проекты подходящие
+						| под твой уровень знаний
+			li.offer-list__item
+				.offer-list__item-icon
+				.offer-content
+					.offer-content__title Ставка до 1 000 руб. за час
+					.offer-content__text
+						| Оценим твои знания и определим ставку на собеседовании
+			li.offer-list__item
+				.offer-list__item-icon
+				.offer-content
+					.offer-content__title Без общения с клиентами
+					.offer-content__text
+						| Переписку с клиентами ведут только консультанты и менеджеры проектов
+			li.offer-list__item
+				.offer-list__item-icon
+				.offer-content
+					.offer-content__title Профессиональный рост
+					.offer-content__text
+						| Составим план развития, сформируем обучающий курс
+			li.offer-list__item
+				.offer-list__item-icon
+				.offer-content
+					.offer-content__title Гибкий график
+					.offer-content__text
+						| Работа в удобное для тебя время
+
+mixin gorizontal-block(class_modification)
+	if class_modification === undefined
+		section(class= 'gorizontal-block')
+			+gorizontal-block-content
+	else
+		section(class= 'gorizontal-block ' + class_modification)
+			+gorizontal-block-content

@@ -1,0 +1,73 @@
+.main-footer {
+	background-color: $color-black-add-file;
+}
+.template-wrapper_footer {
+	display: flex;
+	align-items: flex-start;
+	padding: 38px 0 50px;
+}
+.call-text {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.11;
+	color: $color-white;
+	margin-bottom: 23px;
+}
+.footer-phone {
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1;
+	color: $color-white;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+.footer-operating-mode {
+	font-size: 16px;
+	line-height: 1.25;
+	color: $color-white;
+}
+.actual-address,
+.inn {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $color-white;
+}
+.public-offer {
+	font-size: 16px;
+	line-height: 1.5;
+	display: inline;
+}
+.public-offer + .public-offer {
+	margin-top: 4px;
+}
+.footer-col_footer-phone {
+	margin-right: 269px;
+}
+.actual-address {
+	margin-bottom: 15px;
+}
+.inn {
+	margin-bottom: 15px;
+}
+.footer-col_information {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.footer-link {
+	margin-left: 9px;
+}
+.megamir-link-text {
+	border-bottom: 1px solid rgba(0, 102, 255, 0);
+	transition: .3s ease;
+}
+.megamir-link {
+	display: flex;
+	align-items: baseline;
+	&.content-link:hover {
+		border-color: transparent;
+	}
+	&:hover .megamir-link-text {
+		border-bottom-color: rgba(0, 102, 255, 1);
+	}
+}
