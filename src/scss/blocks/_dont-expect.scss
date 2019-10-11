@@ -1,3 +1,42 @@
 .dont-expect-col:nth-child(1) {
 	margin-right: 32px;
 }
+.dont-expect-list__item {
+	position: relative;
+	margin-bottom: 48px;
+}
+.dont-expect-list__item:last-child {
+	margin-bottom: 0;
+}
+.dont-expect-list__item::before {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left: -52px;
+	top: 2px;
+	font-size: 21px;
+	display: block;
+}
+.dont-expect-list__item_1::before {
+	content: "";
+	background: url("../images/dont-expect-emodz1.png") no-repeat;
+	background-size: 100%;
+}
+.dont-expect-list__item_2::before {
+	content: "";
+	background: url("../images/dont-expect-emodz2.png") no-repeat;
+	background-size: 100%;
+}
+.dont-expect-list__item_3::before {
+	content: "";
+	background: url("../images/dont-expect-emodz3.png") no-repeat;
+	background-size: 100%;
+}
+.dont-expect-title {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.dont-expect-text {
+	line-height: 1.82;
+	font-size: 22px;
+}

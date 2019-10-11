@@ -1,0 +1,31 @@
+mixin grey-block-content
+	.template-wrapper.template-wrapper_advantages.section-wrapper.full-height
+		.grey-block__col.grey-block__col_sticky.dont-expect-col
+				h2.main-h2 <span class="br">Плюсы</span> <span class="br">работы</span> <span class="red-text">в команде</span>
+		.grey-block__col.dont-expect-col
+			.competencies-list
+				.competencies-list__item.advantages-item.advantages-item1
+					.competencies-list__item-title.dont-expect-title Пассивный заработок
+					.competencies-list__item-text.dont-expect-text Сотрудники получают пожизненный процент с&nbsp;разработки своих проектов
+				.competencies-list__item.advantages-item.advantages-item2
+					.competencies-list__item-title.dont-expect-title Интересные проекты
+					.competencies-list__item-text.dont-expect-text Занимаемся только теми задачами, которые развивают компетенции специалиста
+				.competencies-list__item.advantages-item.advantages-item3
+					.competencies-list__item-title.dont-expect-title Полный соц. пакет
+					.competencies-list__item-text.dont-expect-text Официальное трудоустройство, оплачиваемый отпуск, больничные и&nbsp;декрет
+				.competencies-list__item.advantages-item.advantages-item4
+					.competencies-list__item-title.dont-expect-title Возможность преподовать
+					.competencies-list__item-text.dont-expect-text Сотрудники ведут курсы в&nbsp;корпоративном университете за&nbsp;которые получают деньги
+				.competencies-list__item.advantages-item.advantages-item5
+					.competencies-list__item-title.dont-expect-title Зимний Camp за счёт компании
+					.competencies-list__item-text.dont-expect-text Каждую зиму выезжаем в&nbsp;рабочую &laquo;командировку&raquo;в&nbsp;тёплые страны
+				.competencies-list__item.advantages-item.advantages-item6
+					.competencies-list__item-title.dont-expect-title Гарантируем объём работы
+					.competencies-list__item-text.dont-expect-text До 200 часов в месяц
+mixin grey-block_advantages(class_modification)
+	if class_modification === undefined
+		section(class= 'grey-block')
+			+grey-block-content
+	else
+		section(class= 'grey-block ' + class_modification)
+			+grey-block-content

@@ -44,9 +44,9 @@ body {
 	margin-left: auto;
 }
 .btn {
-	background-color: $color-blue-button;
+	background-color: $color-green-button;
 	border-radius: 4px;
-	box-shadow: 0 2px 8px 0 rgba(13, 61, 133, 0.4);
+	box-shadow: 0 2px 8px 0 rgba(22, 189, 49, 0.4);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
@@ -59,8 +59,8 @@ body {
 	transition: .3s ease;
 	text-align: center;
 	&:hover {
-		box-shadow: 0 2px 8px 0 rgba(13, 61, 133, 0.4);
-		background-color: $color-dark-blue-hover-btn;
+		box-shadow: 0 2px 8px 0 rgba(22, 189, 49, 0.4);
+		background-color: $color-dark-green-hover-btn;
 	}
 	&:active {
 		transform: translateY(8px);
@@ -97,7 +97,6 @@ body {
 }
 .crossed-out-text {
 	display: block;
-	margin-top: 17px;
 }
 .slick-slide:focus {
 	outline: none;
@@ -168,4 +167,7 @@ label.error {
 @import "blocks/up-block";
 @import "blocks/dont-expect";
 @import "blocks/footer";
+@import "blocks/gorizontal-dark-block";
+@import "blocks/layout-cost";
+@import "blocks/advantages";
 @import "media";

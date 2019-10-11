@@ -1,25 +1,25 @@
-mixin grey-block-content_operation-procedure
+mixin grey-block-content_dont-expect
 	.template-wrapper.template-wrapper_advantages.section-wrapper.full-height
 		.grey-block__col.grey-block__col_sticky.dont-expect-col
 			h2.main-h2 Не стоит <span class="red-text">ожидать</span>
 		.grey-block__col.dont-expect-col
 			.competencies-list.dont-expect-list
 				.competencies-list__item.dont-expect-list__item.dont-expect-list__item_1
-					.competencies-list__item-title 100% загруженности проектами
-					.competencies-list__item-text
+					.competencies-list__item-title.dont-expect-title 100% загруженности проектами
+					.competencies-list__item-text.dont-expect-text
 						| Чем шире список твоих компетенций, тем больше проектов тебе доступно. Мы&nbsp;не&nbsp;подбираем задачи под твои знания.
 				.competencies-list__item.dont-expect-list__item.dont-expect-list__item_2
-					.competencies-list__item-title Предоплаты
-					.competencies-list__item-text
+					.competencies-list__item-title.dont-expect-title Предоплаты
+					.competencies-list__item-text.dont-expect-text
 						| Оплата за&nbsp;проект только после согласования задачи с&nbsp;клиентом
 				.competencies-list__item.dont-expect-list__item.dont-expect-list__item_3
-					.competencies-list__item-title Принудительного обучения
-					.competencies-list__item-text
+					.competencies-list__item-title.dont-expect-title Принудительного обучения
+					.competencies-list__item-text.dont-expect-text
 						|Обучаться необязательно, но&nbsp;если ты&nbsp;заинтересован в&nbsp;развиватии своих компетенций, то&nbsp;ты&nbsp;можешь <a href="//mmit.ru/" target="_blank" class="content-link">стать частью нашей команды</a>
-mixin grey-block_operation-procedure(class_modification)
+mixin grey-block_dont-expect(class_modification)
 	if class_modification === undefined
 		section(class= 'grey-block')
-			+grey-block-content_operation-procedure
+			+grey-block-content_dont-expect
 	else
 		section(class= 'grey-block ' + class_modification)
-			+grey-block-content_operation-procedure
+			+grey-block-content_dont-expect

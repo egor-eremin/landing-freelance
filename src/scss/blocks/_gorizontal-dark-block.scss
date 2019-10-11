@@ -1,0 +1,43 @@
+.way-development {
+  background-color: $color-dark-block;
+}
+.main-h2_for-dark {
+  color: $color-white;
+}
+.way-development-list {
+  margin-top: 114px;
+}
+.way-development-list__item {
+  display: flex;
+  align-items: flex-start;
+  width: 960px;
+  flex-shrink: 0;
+  margin-right: 161px;
+}
+.way-development-when {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.way-development-text p {
+  color: $color-placeholder;
+  font-size: 22px;
+  line-height: 1.82;
+  margin-bottom: 20px;
+}
+.way-development-text p + p {
+  margin-bottom: 0;
+}
+.way-development-icon {
+  margin-right: 57px;
+}
+.way-development-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: $color-white;
+  margin-bottom: 28px;
+}
