@@ -19,7 +19,6 @@ $(document).ready(function () {
     require ('./blocks/up-top');
     require ('./blocks/welcom');
     require ('./blocks/reviews');
-    require ('./blocks/grey-block');
 
     (function validationFormCallback() {
         validationForm('.request-form');
@@ -82,12 +81,12 @@ $(document).ready(function () {
             showText();
         })
     })();
-    // (function addedHeightBlock() {
-    //     calculatesHeight();
-    //     $(window).on('resize', function () {
-    //         calculatesHeight();
-    //     });
-    // })();
+    (function addedHeightBlock() {
+        calculatesHeight();
+        $(window).on('resize', function () {
+            calculatesHeight();
+        });
+    })();
     (function addedProgressBar() {
         var percent = 100 - ($(window).scrollTop() / ($(document).height() - $(window).height()) * 100);
 
@@ -136,72 +135,72 @@ $(document).ready(function () {
     //     });
     //
     //  })();
-    (function initOurTeamAnimation() {
-        var controller = new ScrollMagic.Controller();
-        var tween = new TimelineMax()
-            .to('.team-list__item_1',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            .to('.team-list__item_2',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            .to('.team-list__item_3',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            .to('.team-list__item_4',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            .to('.team-list__item_5',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            .to('.team-list__item_6',1.5,{
-                transform: "translateX(0)",
-                opacity: 1
-            })
-            // .to('.competencies__item_1',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_2',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_3',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_4',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_5',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_6',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_7',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_8',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_9',.5,{
-            //     opacity: 1
-            // })
-
-        var scene = new ScrollMagic.Scene({
-            triggerElement: ".our-team",
-            duration: 300,
-            // offset: 100
-        })
-            .setTween(tween)
-            // .addIndicators()
-            .addTo(controller);
-
-
-    })();
+    // (function initOurTeamAnimation() {
+    //     var controller = new ScrollMagic.Controller();
+    //     var tween = new TimelineMax()
+    //         .to('.team-list__item_1',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         .to('.team-list__item_2',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         .to('.team-list__item_3',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         .to('.team-list__item_4',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         .to('.team-list__item_5',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         .to('.team-list__item_6',1.5,{
+    //             transform: "translateX(0)",
+    //             opacity: 1
+    //         })
+    //         // .to('.competencies__item_1',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_2',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_3',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_4',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_5',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_6',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_7',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_8',.5,{
+    //         //     opacity: 1
+    //         // })
+    //         // .to('.competencies__item_9',.5,{
+    //         //     opacity: 1
+    //         // })
+    //
+    //     var scene = new ScrollMagic.Scene({
+    //         triggerElement: ".our-team",
+    //         duration: 300,
+    //         // offset: 100
+    //     })
+    //         .setTween(tween)
+    //         // .addIndicators()
+    //         .addTo(controller);
+    //
+    //
+    // })();
     (function animateAllSection() {
         var controller = new ScrollMagic.Controller();
         $('.section-animate').each(function (index, value) {
@@ -363,15 +362,13 @@ function media(mediaQueryString, action){
     mql.addListener(handleMatchMedia);
 }
 function calculatesHeight() {
-    $('.animation-advantages').each(function (index, value) {
-        var item = $(value).find('.advantages-list__item');
+    $('.gorizontal-block').each(function (index, value) {
+        var item = $(value).find('.gorizontal-item');
         var itemsLength = item.length;
         var itemsHeight = item.outerHeight();
-        var paddingTop = $(value).find('.template-wrapper_grey-block').css('padding-top');
-        var paddingBottom = $(value).find('.template-wrapper_grey-block').css('padding-bottom');
-        var marginTop = $(value).find('.advantages-list').css('margin-top');
-        var allHeight = itemsLength * itemsHeight + parseInt(paddingTop) + parseInt(paddingBottom) + parseInt(marginTop);
-
+        var valueHeight = $(value).find('.gorizontal-sticky-wrapper').outerHeight();
+        var allHeight = itemsHeight * (itemsLength - 1) + valueHeight;
+        // console.log(allHeight);
         $(value).css('height', '' + allHeight + 'px');
     });
 }

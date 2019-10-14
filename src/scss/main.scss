@@ -152,9 +152,16 @@ label.error {
 	transform: translateY(70px);
 }
 .gorizontal-block {
-	overflow: hidden;
+	position: relative;
 }
-
+.main-h2_for-sticky {
+	margin-bottom: 0;
+}
+.gorizontal-sticky-wrapper {
+	overflow: hidden;
+	position: sticky;
+	top: -50px;
+}
 @import "blocks/header";
 @import "blocks/gorizontal-block";
 @import "blocks/welcom-block";

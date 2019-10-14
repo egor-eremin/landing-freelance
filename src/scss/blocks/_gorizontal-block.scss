@@ -23,6 +23,9 @@
 	background: $color-green;
 	border-radius: 8px;
 	margin-bottom: 39px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .offer-content__title {
 	color: $main-fonts;

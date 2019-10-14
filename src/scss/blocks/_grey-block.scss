@@ -110,8 +110,11 @@
 .competencies-list__item {
 	margin-bottom: 31px;
 }
+.competencies-list__item:last-child {
+	margin-bottom: 0;
+}
 .grey-block__col_sticky {
 	position: sticky;
-	top: 0;
-	margin-bottom: 31px;
+	top: 50px;
+	//margin-bottom: 31px;
 }

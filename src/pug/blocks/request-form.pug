@@ -2,10 +2,10 @@ mixin request-content
 	.template-wrapper.template-wrapper_request.section-wrapper
 		.request-content
 			h2.main-h2
-				| <span class="br">Заявка</span>
-				| на вёрстку
+				| <span class="br">Заявка на</span>
+				| вакансию
 			.request-content__text
-				| Отправьте макеты, мы&nbsp;оценим вёрстку и&nbsp;пришлём смету
+				| Отправьте заявку, свяжемся
 				| в&nbsp;течение дня <span class="rocket">
 				| <svg width="67px" height="53px" viewBox="0 0 67 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				|     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -51,21 +51,6 @@ mixin request-content
 				label.form-label
 					span.label-text Мобильный телефон
 					input(type="tel" name="phone" placeholder="+7 (000) 000-00-00" required).form-input.user-phone
-			.form-item.form-item_textarea
-				label.form-label
-					span.label-text Кратко суть задачи
-					textarea(name="description").form-textarea.custom-scroll
-			.form-item.form-item_add-file
-				.download-file-block
-					ul.upload-list
-					.upload-file-wrapper
-						.upload-file-button
-							input(type="file" multiple)#add-file-input.custom-input-file
-							label.add-file(for="add-file-input")
-								| <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-								|     <path fill="#FFF" fill-rule="evenodd" d="M7 5h4.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H7v4.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V7H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 5H5V.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V5z"/>
-								| </svg>
-						.label-text-download Прикрепить макеты
 			.form-item.form-item_submit
 				button.btn.btn_submit Отправить
 			.privacy-policy
