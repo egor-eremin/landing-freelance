@@ -4,6 +4,7 @@
 .gorizontal-wrapper {
 	display: flex;
 	align-items: flex-start;
+	transform: translateX(0);
 }
 .offer-list__item {
 	width: 392px;
@@ -16,6 +17,9 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 56px 32px 63px;
+}
+.offer-content {
+	width: 100%;
 }
 .offer-list__item-icon {
 	width: 136px;

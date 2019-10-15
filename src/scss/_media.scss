@@ -254,6 +254,49 @@
 		line-height: 1.4;
 		margin-bottom: 3px;
 	}
+	.offer-list__item {
+		padding: 56px 24px 50px;
+		width: 344px;
+		height: 336px;
+	}
+	.offer-content__title {
+		font-size: 20px;
+		margin-bottom: 9px;
+		line-height: 1.2;
+	}
+	.offer-content__text {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.offer-list {
+		margin-top: 70px;
+	}
+	.gorizontal-sticky-wrapper {
+		top: -24px;
+	}
+	.way-development-title {
+		font-size: 20px;
+		margin-bottom: 9px;
+	}
+	.way-development-text p {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+	}
+	.way-development-when {
+		font-size: 14px;
+	}
+	.way-development-icon svg {
+		width: 200px;
+		height: 200px;
+	}
+	.way-development-list__item {
+		width: 700px;
+		margin-right: 80px;
+	}
+	.way-development-list {
+		margin-top: 70px;
+	}
 }
 @media (max-width: 1024px) {
 	.animation-advantages {
@@ -299,7 +342,7 @@
 		}
 	}
 	.grey-block__text {
-		margin-bottom: 47px;
+		margin-bottom: 39px;
 		.br {
 			display: inline;
 		}
@@ -348,6 +391,7 @@
 		margin-top: -3px;
 	}
 	.layout-cost {
+		margin-top: 87px;
 		margin-bottom: 53px;
 	}
 	.reviews-list {
@@ -402,7 +446,7 @@
 		padding-bottom: 47px;
 	}
 	.template-wrapper_advantages {
-		padding-bottom: 56px;
+		padding-bottom: 96px;
 	}
 	.main-h2_center {
 		text-align: left;
@@ -453,7 +497,7 @@
 		margin-right: 28px;
 	}
 	.template-wrapper_request {
-		margin-top: 96px;
+		margin-top: 0;
 		padding-bottom: 0;
 	}
 	.request-form {
@@ -493,6 +537,113 @@
 	}
 	.request-content {
 		width: calc(100% - 144px);
+	}
+	.grey-block__col_sticky {
+		position: static;
+	}
+	.grey-block__col:nth-child(2) {
+		margin-top: 0;
+	}
+	.competencies-list__item-title {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.45;
+	}
+	.competencies-list__item {
+		margin-bottom: 31px;
+	}
+	.offer-list {
+		margin-top: 50px;
+	}
+	.gorizontal-block {
+		height: auto !important;
+	}
+	.gorizontal-wrapper {
+		flex-direction: column;
+		transform: none !important;
+	}
+	.offer-list__item {
+		height: 312px;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.offer-list__item:last-child {
+		margin-bottom: 0;
+	}
+	.offer-list__item-icon {
+		width: 96px;
+		height: 96px;
+		flex-shrink: 0;
+		margin-bottom: 29px;
+	}
+	.competencies-list__item {
+		display: flex;
+		flex-direction: column;
+	}
+	.advantages-item::before,
+	.dont-expect-list__item::before {
+		position: static;
+		margin-bottom: 8px;
+	}
+	.dont-expect-title {
+		margin-bottom: 9px;
+	}
+	.main-h2 {
+		margin-bottom: 19px;
+	}
+	.dont-expect-text {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.way-development-icon svg {
+		width: 152px;
+		height: 152px;
+	}
+	.way-development-list__item {
+		display: flex;
+		flex-direction: column;
+	}
+	.way-development-icon {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.way-development-when {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.4px;
+		margin-bottom: 10px;
+	}
+	.way-development-title {
+		font-size: 22px;
+		line-height: 1.45;
+		font-weight: 700;
+	}
+	.way-development-text p {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.way-development-list__item {
+		max-width: 700px;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 55px;
+	}
+	.way-development-list__item:last-child {
+		margin-bottom: 0;
+	}
+	.main-h2_layout-cost {
+		margin-bottom: 19px;
+		text-align: center;
+	}
+	.layout-cost-wrapper-btn {
+		display: none;
+	}
+	.main-h2_grey-block {
+		margin-bottom: 30px;
+	}
+	.way-development-list {
+		margin-top: 58px;
 	}
 }
 @media (max-width: 850px) {
@@ -588,12 +739,26 @@
 	.line-svg-mobile {
 		display: block;
 	}
+	.prev-text_by-projects {
+		width: 100%;
+	}
+	.offer-list__item {
+		width: 100%;
+		max-width: 344px;
+	}
 }
 @media (max-width: 400px) {
 	.advantages-list__item {
 		width: 100%;
 	}
-	.main-h1, .main-h2 {
-		font-size: 42px;
+	.main-h1, .main-h2, .typed-text-wrapper .typed-cursor {
+		font-size: 38px;
+	}
+	.main-h2_layout-cost {
+		font-size: 38px;
+	}
+	.request-content {
+		margin-right: 0;
+		width: 100%;
 	}
 }

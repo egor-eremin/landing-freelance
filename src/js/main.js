@@ -201,6 +201,27 @@ $(document).ready(function () {
     //
     //
     // })();
+    (function animationGorizontalBlock() {
+        var controller = new ScrollMagic.Controller();
+
+        $('.gorizontal-block').each(function (index, value) {
+            let frame_count = $(this).find('.gorizontal-item').length;
+            let wrapperWidth = $(this).find('.template-wrapper_gorizontal-block').innerWidth();
+            let frameWidth = $(this).find('.gorizontal-item').outerWidth(true);
+            let widthAllFrame = frameWidth * frame_count;
+            let difference = widthAllFrame - wrapperWidth;
+            let animationElement = value.getElementsByClassName('gorizontal-wrapper');
+
+            let scene = new ScrollMagic.Scene({
+                triggerElement: value,
+                duration: value.offsetHeight,
+                offset: value.offsetHeight * 7 / 100
+            })
+                .setTween(animationElement, {transform: "translateX(-" + difference + "px)"})
+                // .addIndicators()
+                .addTo(controller);
+        });
+    })();
     (function animateAllSection() {
         var controller = new ScrollMagic.Controller();
         $('.section-animate').each(function (index, value) {
