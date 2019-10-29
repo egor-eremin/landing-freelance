@@ -4,9 +4,13 @@
 	}
 }
 @media (max-height: 720px) {
-	//.full-height {
-	//	min-height: auto;
-	//}
+	.full-height {
+		padding-top: 54px;
+		padding-bottom: 96px;
+	}
+	.gorizontal-sticky-wrapper {
+		top: 0;
+	}
 	.template-wrapper_welcom-block {
 		height: auto;
 	}

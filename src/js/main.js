@@ -214,9 +214,9 @@ $(document).ready(function () {
 
             let scene = new ScrollMagic.Scene({
                 triggerElement: value,
-                duration: value.offsetHeight - 200,
+                duration: value.offsetHeight - 700,
                 // offset: value.offsetHeight * 7 / 100
-                offset: 200
+                offset: 300
             })
                 .setTween(animationElement, {transform: "translateX(-" + difference + "px)"})
                 // .addIndicators()
@@ -318,6 +318,8 @@ function validationForm(formInit) {
         // },
         submitHandler: function(form) {
 
+            let currentPhone = $('.user-phone').val();
+
 
             $.ajax({
                 type: $(form).attr('method'),
@@ -330,6 +332,7 @@ function validationForm(formInit) {
 
                 dataType: 'text',
                 success: function () {
+                    $('.current-number-phone').text(currentPhone);
                         $.magnificPopup.open({
                             items: {
                                 src: '.answer-form'
@@ -345,6 +348,7 @@ function validationForm(formInit) {
                                     $('html').css('overflow', 'visible');
                                     $(form).find('input').val('');
                                     $(form).find('textarea').val('');
+                                    $('.current-number-phone').text('');
                                 }
                             }
                         });

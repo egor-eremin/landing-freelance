@@ -64,6 +64,7 @@ body {
 	}
 	&:active {
 		transform: translateY(8px);
+		box-shadow: none;
 	}
 }
 .button-wrapper {
@@ -111,7 +112,7 @@ body {
 	box-shadow: none;
 }
 .content-link {
-	display: inline-block;
+	display: inline;
 	color: $color-blue-button;
 	border-bottom: 1px solid rgba(0,102,255,0);
 	transition: .3s ease;
