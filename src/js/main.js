@@ -214,8 +214,9 @@ $(document).ready(function () {
 
             let scene = new ScrollMagic.Scene({
                 triggerElement: value,
-                duration: value.offsetHeight,
-                offset: value.offsetHeight * 7 / 100
+                duration: value.offsetHeight - 200,
+                // offset: value.offsetHeight * 7 / 100
+                offset: 200
             })
                 .setTween(animationElement, {transform: "translateX(-" + difference + "px)"})
                 // .addIndicators()
