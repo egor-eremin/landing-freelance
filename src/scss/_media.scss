@@ -52,8 +52,8 @@
 		font-size: 18px;
 	}
 	.btn_welcom-block {
-		padding-right: 28px;
-		padding-left: 27px;
+		padding-right: 77px;
+		padding-left: 77px;
 	}
 	.grey-block__text {
 		font-size: 20px;
@@ -652,6 +652,9 @@
 	.offer-list__item-icon svg {
 		height: 50px !important;
 	}
+	.template-wrapper_welcom-block {
+		min-height: calc(100vh - 58px);
+	}
 }
 @media (max-width: 850px) {
 	 .template-wrapper {
@@ -729,7 +732,7 @@
 		width: 328px;
 	}
 	.answer-form {
-		padding: 40px 30px 55px;
+		padding: 65px 30px 110px;
 	}
 	.layout-cost__text .br {
 		display: inline;
@@ -751,7 +754,18 @@
 	}
 	.offer-list__item {
 		width: 100%;
-		max-width: 344px;
+	}
+	.offer-content {
+		max-width: 450px;
+	}
+	.request-content {
+		width: 100%;
+	}
+	.actual-address {
+		max-width: 336px;
+	}
+	.footer-col {
+		width: 100%;
 	}
 }
 @media (max-width: 400px) {

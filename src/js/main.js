@@ -211,12 +211,13 @@ $(document).ready(function () {
             let widthAllFrame = frameWidth * frame_count;
             let difference = widthAllFrame - wrapperWidth;
             let animationElement = value.getElementsByClassName('gorizontal-wrapper');
+            let offsetTop = parseInt($(this).find('.template-wrapper_gorizontal-block').css('padding-top')) + $(this).find('.main-h2').outerHeight() + parseInt($(this).find('.gorizontal-wrapper').css('margin-top')) + ($(this).find('.gorizontal-wrapper').outerHeight() / 2);
 
             let scene = new ScrollMagic.Scene({
                 triggerElement: value,
-                duration: value.offsetHeight - 700,
+                duration: value.offsetHeight - offsetTop,
                 // offset: value.offsetHeight * 7 / 100
-                offset: 300
+                offset: offsetTop
             })
                 .setTween(animationElement, {transform: "translateX(-" + difference + "px)"})
                 // .addIndicators()
@@ -240,7 +241,16 @@ $(document).ready(function () {
         var reviewsLength = $('.reviews-list__item').length;
 
         $('.review-number').text(reviewsLength);
-    })()
+    })();
+    (function goToAdvantages() {
+        $('.go-to-advantages').on('click', function (e) {
+            e.preventDefault();
+
+            var advantagesBlock = $('.advantages').offset().top;
+
+            $('body, html').animate({ scrollTop: advantagesBlock}, 300);
+        })
+    })();
 });
 
 function addedNewFile(id, file) {
@@ -318,7 +328,7 @@ function validationForm(formInit) {
         // },
         submitHandler: function(form) {
 
-            let currentPhone = $('.user-phone').val();
+            let currentEmail = $('.form-input[type="email"]').val();
 
 
             $.ajax({
@@ -332,7 +342,7 @@ function validationForm(formInit) {
 
                 dataType: 'text',
                 success: function () {
-                    $('.current-number-phone').text(currentPhone);
+                    $('.current-email').text(currentEmail);
                         $.magnificPopup.open({
                             items: {
                                 src: '.answer-form'
@@ -348,7 +358,7 @@ function validationForm(formInit) {
                                     $('html').css('overflow', 'visible');
                                     $(form).find('input').val('');
                                     $(form).find('textarea').val('');
-                                    $('.current-number-phone').text('');
+                                    $('.form-input[type="email"]').text('');
                                 }
                             }
                         });

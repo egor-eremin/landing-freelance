@@ -105,7 +105,7 @@ body {
 *:focus {
 	outline: none;
 	//outline: 3px solid #bfddfb;
-	box-shadow: 0 0 0 3px #bfddfb;
+	box-shadow: 0 0 0 3px rgba(22, 189, 49, 0.5);
 	//outline-offset: 1px;
 }
 .js-focus-visible :focus:not(.focus-visible) {
@@ -162,6 +162,12 @@ label.error {
 	overflow: hidden;
 	position: sticky;
 	top: -114px;
+}
+.content-link_anchor-link {
+	border-bottom: 1px dashed rgba(0, 102, 255, 0.3);
+	&:hover {
+		border-bottom: 1px dashed rgba(0, 102, 255, 0.6);
+	}
 }
 
 @import "blocks/header";
