@@ -385,8 +385,8 @@
 		display: block;
 	}
 	.projects-slider .owl-dots {
-		bottom: auto;
-		top: 16px;
+		bottom: 16px;
+		top: auto;
 	}
 	.btn-show-more {
 		max-width: 100%;
@@ -537,7 +537,7 @@
 	}
 	.projects-slider button.owl-dot.animate::before {
 		animation: none;
-		transform: translate(0, 0);
+		transform: translate(0, -50%);
 	}
 	.request-content {
 		width: calc(100% - 144px);
