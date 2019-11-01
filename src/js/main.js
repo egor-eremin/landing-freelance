@@ -246,9 +246,9 @@ $(document).ready(function () {
         $('.go-to-advantages').on('click', function (e) {
             e.preventDefault();
 
-            var advantagesBlock = $('.advantages').offset().top;
+            var advantagesBlock = $('.advantages').offset().top - 54;
 
-            $('body, html').animate({ scrollTop: advantagesBlock}, 300);
+            $('body, html').animate({ scrollTop: advantagesBlock});
         })
     })();
 });
